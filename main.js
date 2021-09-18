@@ -1411,9 +1411,7 @@ process.umask = function() { return 0; };
 },{}],7:[function(require,module,exports){
 (function (global){(function (){
 var doctrine = require("doctrine");
-
-
-
+//FUNCTIONHERE
 global.parse = function parse(comment){
 		var parsed = doctrine.parse(comment, { unwrap: true });
 		
@@ -1452,7 +1450,7 @@ global.parse = function parse(comment){
 				if(param.title == "return"){
 					paramdesc = param.description;
 					var result = getType.exec(paramdesc);
-					var returntype = result[1]
+					var returntype = result[1] //RETURNTYPE
 					
 
 					var returnComments = paramdesc.replace(result[0], "").trim()
@@ -1462,9 +1460,8 @@ global.parse = function parse(comment){
 		parameters = parameters.slice(0, -2);
 		
 
-		var finished = 
+var finished = 
 `
-${comment}
 public static ${returntype} ${funcName}(${parameters}){
 
 	return ${returntype}; //${returnComments}

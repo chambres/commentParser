@@ -22,6 +22,7 @@ body {
 			  
 			  document.getElementById('comments').style.display = 'none';
 			  document.getElementById('submit').style.display = 'none';
+			  document.getElementById('instruct').style.display = 'none';
 			  document.getElementById('title').innerHTML = "Done!";
 			  document.getElementById("add_to_me").innerHTML += `<div><textarea spellcheck="false" id="w3review" name="w3review" rows="10" cols="150">` + parse(val) + `</textarea>`;
 			  
@@ -32,7 +33,8 @@ body {
 			  </script>
 			  
 			  
-			 <h1 id="title" >Enter Comments Here:</h1>
+			 <h1 id="title" >CSA Comment to Function Converter</h1>
+			 <h3 id="instruct" >Paste comments here:</h3>
 			 <textarea spellcheck="false" id="comments" name="comments" rows="10" cols="150"></textarea>
 <br>
 			  <input id="submit" type="submit" value="Submit" onclick="getData()">
@@ -44,7 +46,8 @@ body {
 			</div>
 				
 			
-
+<div>
+<h4>Thanks to Doctorine for initial JSDoc parsing. Rest is done in hand-written JS.<br><br><br>have fun</h4>
 
 </body>
 </html>
