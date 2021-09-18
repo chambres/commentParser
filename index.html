@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+
+
+<head>
+<meta name="color-scheme" content="dark light">
+<style>
+body {
+  font-family: 'Courier New', monospace;
+}
+</style>
+</head>
+<body>
+
+			  <!-- your content here... -->
+			  <script src="main.js"></script>
+			  <script>
+			  
+			  function getData(){
+			  var val = document.getElementById("comments").value;
+			  
+			  document.getElementById('comments').style.display = 'none';
+			  document.getElementById('submit').style.display = 'none';
+			  document.getElementById('title').innerHTML = "Done!";
+			  document.getElementById("add_to_me").innerHTML += `<div><textarea spellcheck="false" id="w3review" name="w3review" rows="10" cols="150">` + parse(val) + `</textarea>`;
+			  
+			  
+			  
+			  }
+			  
+			  </script>
+			  
+			  
+			 <h1 id="title" >Enter Comments Here:</h1>
+			 <textarea spellcheck="false" id="comments" name="comments" rows="10" cols="150"></textarea>
+<br>
+			  <input id="submit" type="submit" value="Submit" onclick="getData()">
+		
+			
+			
+			<div id="add_to_me">
+			
+			</div>
+				
+			
+
+
+</body>
+</html>
