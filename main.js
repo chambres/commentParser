@@ -1411,8 +1411,8 @@ process.umask = function() { return 0; };
 },{}],7:[function(require,module,exports){
 (function (global){(function (){
 var doctrine = require("doctrine");
-//FUNCTIONHERE
-global.parse = function parse(comment){
+//MAINFUNCTIONHERE
+global.parse = function parse(comment){ //hello from github :)
 		var parsed = doctrine.parse(comment, { unwrap: true });
 		
 		desc = parsed.description;
